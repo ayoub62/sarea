@@ -1,0 +1,22 @@
+package app.controllers;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+public class LoginController {
+
+	@RequestMapping("/login")
+	public String login() {
+		return "logIn";
+	}
+	
+	@RequestMapping("/logout")
+	public String logout() {
+		return "logIn";
+	}
+	@RequestMapping("/erreurLogin")
+	public String logInFailure() {
+		return "erreurLogin";
+	}
+}

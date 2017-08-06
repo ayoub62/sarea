@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<base href="/">
+<meta charset="utf-8">
+<title>Insert title here</title>
+<!-- FONTAWESOME LINK -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- INITALISATION CSS LINK -->
+<link rel="stylesheet" href="css/initialisation.css">
+<!-- LOGIN STYLES CSS LINK -->
+<link rel="stylesheet" href="css/index-page-styles.css">
+</head>
+<body ng-app="AppModule">
+	<section id="dashboard" class="clearFix">
+		<div class="dashboard-left">
+			<div class="dashboard-user-info clearFix">
+				<div class="wrapper">
+					<img src="images/default.jpg">
+					<span class="username">ayoubal</span>
+					<span class="role">admin</span>
+				</div>
+				<img src="images/bgimage.jpg" alt="">
+			</div>
+			<ul>
+				<li><a href="home">home</a></li>
+				<li><a href="contact">contact</a></li>
+			</ul>
+		</div>
+		<div class="dashboard-right">
+			<div class="dashboard-header" ng-controller="cont">
+				<ul>
+					<li><a ng-click="logout()" class="logout-link" href="/logout"><span class="fa fa-sign-out"></span></a></li>
+				</ul>
+				<span class="app-logo">Sarea</span>
+			</div>
+			<div class="dashboard-dynamic-content" ng-view></div>
+		</div>
+	</section>
+	<!-- SCRIPS LINKS -->
+	<script src="js/libs/angular.js"></script>
+	<script src="js/libs/angular-route.min.js"></script>
+	<script src="js/script-routing.js"></script>
+</body>
+</html>

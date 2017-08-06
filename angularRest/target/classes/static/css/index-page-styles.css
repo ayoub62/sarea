@@ -1,0 +1,108 @@
+/*------------------- DASHBOARD PAGE STYLES -------------------*/
+#dashboard > div{
+	float: left;
+}
+#dashboard .dashboard-right{
+	width: 82.5%;
+	height: 100vh;
+	background-color: #fff;
+}
+
+#dashboard .dashboard-left{
+	width: 17.5%;
+	height: 100vh;
+	background-color: #273135;
+}
+#dashboard .dashboard-right .dashboard-header{
+	height: 11vh;
+	background-color: #273135;
+	position: relative;
+}
+#dashboard .dashboard-left .dashboard-user-info{
+	height: 25vh;
+	background-color: #20A9D7;
+}
+#dashboard .dashboard-right .dashboard-dynamic-content{
+	height: 89vh;
+	background-color: #fff;
+}
+
+/*------------------- DASHBOARD HEADER STYLES -------------------*/
+.dashboard-header ul{
+	float: right;
+}
+.dashboard-header ul li{
+	float: left;
+}
+.dashboard-header ul li a{
+	display: block;
+	color: #89949B;
+	font-size: 30px;
+	height: 11vh;
+	text-align: center;
+	line-height: 11vh;
+	padding: 0 30px;
+	transition: all .5s;
+}
+/* .dashboard-header ul li a:hover{
+	background-color: #171D20;
+} */
+.dashboard-header ul li .logout-link{
+	background-color: #80BAF9;
+	color: #fff;
+}
+.dashboard-header .app-logo{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 11vh;
+	display: block;
+	padding-left: 30px;
+	color: #fff;
+	line-height: 11vh;
+	font-size: 25px;
+	font-family: Pacifico;
+	letter-spacing: 1.5px;
+}
+/*------------------- DASHBOARD USER INFO STYLES -------------------*/
+.dashboard-user-info > img{
+	display: block;
+	width: 100%;
+	height: 25vh;
+	position: relative;
+	z-index: 10;
+}
+.dashboard-user-info{
+	position: relative;
+}
+.dashboard-user-info .wrapper{
+	height: 25vh;
+	background-color: rgba(38,50,56,.7);
+	padding-top: 5vh;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 100;
+}
+.dashboard-user-info .wrapper img{
+	display: block;
+	width: 10vh;
+	height: 10vh;
+	border-radius: 100%;
+	margin: 0 auto;
+	margin-bottom: 10px;
+}
+.dashboard-user-info .wrapper span{
+	text-transform: uppercase;
+	font-weight: 100;
+	font-size: 13px;
+	display: block;
+	text-align: center;
+	margin-bottom: 5px;
+	color: #fff;
+	letter-spacing: 1px;
+}
+.dashboard-user-info .wrapper .username{
+	font-weight: 400;
+}

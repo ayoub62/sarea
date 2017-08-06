@@ -1,0 +1,89 @@
+/*------------------- LOGIN PAGE STYLES -------------------*/
+body{
+	background-color: #2A4072;
+	width: 100%;
+}
+.login-form-container{
+	width: 35%;
+	margin: 0 auto;
+	position: relative;
+	margin-top: 10vh;
+}
+.login-form-container h1{
+	padding: 10px 0;
+	margin: 0;
+	text-align: center;
+	background: #17233B;
+	color: #fff;
+	font-weight: 300;
+	font-size: 23px;
+	letter-spacing: 1px;
+}
+.login-form-container form{
+	padding: 20px;
+	background: #1C2B4A;
+}
+.login-form-container form input{
+	display: block;
+	border: none;
+	background: #12192C;
+	width: 100%;
+	color: #666;
+	font-weight: 300;
+	font-size: 14px;
+	margin-bottom: 20px;
+	height: 40px;
+	padding-left: 40px;
+	font-style: italic;
+	font-family: Lato;
+}
+.login-form-container form button{
+	width: 100%;
+	display: block;
+	border: none;
+	height: 40px;
+	color: #fff;
+	font-weight: 300;
+	background-color: #2A4072;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size: 15px;
+	cursor: pointer;
+	font-family: Lato;
+}
+.span-login{
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 5vh;
+	font-size: 100px;
+	border-radius: 100%;
+	width: 15vw;
+	height: 15vw;
+	border: 3px solid #fff;
+	line-height: 15vw;
+	text-align: center;
+	cursor: pointer;
+	transition: all .5s;
+	background-color: #fff;
+	color: #2A4072;
+}
+.span-login:hover{
+	background-color: #2A4072;
+	color: #fff;
+}
+.login-form-container form div span{
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	text-align: center;
+	line-height: 40px;
+	height: 40px;
+	width: 40px;
+	font-size: 20px;
+	color: #fff;
+}
+.login-form-container form div{
+	position: relative;
+}

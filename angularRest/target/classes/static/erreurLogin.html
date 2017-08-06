@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Insert title here</title>
+<!-- FONTAWESOME LINK -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- INITALISATION CSS LINK -->
+<link rel="stylesheet" href="css/initialisation.css">
+<!-- LOGIN STYLES CSS LINK -->
+<link rel="stylesheet" href="css/login-page-styles.css">
+
+</head>
+<body ng-app>
+	<span class="fa fa-user span-login"></span>
+	<div class="login-form-container clearFix">
+		<h1>S'authentifier</h1>
+		<form action="/login" method="post">
+			<div>
+				<input name="username" type="text" placeholder="Entrez votre username">
+				<span class="fa fa-user"></span>
+			</div>
+			<div>
+				<input name="password" type="password" placeholder="Entrez votre mot de passe">
+				<span class="fa fa-lock"></span>
+			</div>
+			<div>
+				<button type="submit">Login</button>
+			</div>
+			<input type="checkbox" name="remember-me" checked="checked" id="dis-none">
+		</form>
+	</div>
+	<p>Username ou mot de passe invalides, veuillez essayer</p>
+	<!-- SCRIPS LINKS -->
+	<script src="js/libs/angular.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>
